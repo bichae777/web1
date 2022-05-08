@@ -1,25 +1,237 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - html</title>
-  <title>WEB1 - HTML</title>
-  <meta charset="utf-8">
+  <br><br><br><br><br>
+<title>bichae - playlist</title>
+<meta charset="utf-8">
+
+<style>    
+a {
+  text-decoration: none;
+  }
+body {
+  background-color: white;
+  }
+h1 {
+  text-align: center;
+  }
+h2 {
+  text-align: center;
+  }
+ 
+body {
+  background-color: white;
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+  height: 5px;
+  width: 40px;
+  background-color: black;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .body-text {
+display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: black;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color: #000;
+  position: absolute;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  width: 100vw;
+  height: 100%;
+  transition: 0.6s ease-in-out;
+}
+
+.menu-pane p {
+  color: black;
+  font-size: 0.6em;
+}
+
+.menu-pane nav {
+  padding: 10%;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  padding: 10%;
+  display: inline-block;
+}
+
+.menu-pane li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+    font-size: 1em;
+}
+
+
+.menu-pane li:first-child {
+  font-size: 1.3em;
+  margin-left: -10px;
+}
+
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+  color: #FFAB91;
+}
+
+.menu-links li:first-child:hover a {
+  color: black;  
+  background-color: #FFAB91;
+}
+
+#QC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+display: block;
+  opacity: 0;
+  
+}
+
+.menu-links li:first-child:hover #QC-info {
+opacity: 1;
+}
+
+.menu-links li:first-child:hover #DC-info {
+opacity: 1;
+}
+
+#DC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+display: block;
+  opacity: 0;
+}
+
+
+.menu-links li:first-child a {
+  padding: 5px;
+}
+
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
+</style>
+<div class="menu-container">
+  
+  <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+  
+  <div class="hamburger-icon">
+    <label for="openmenu" id="hamburger-label">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>    
+  </div>
+
+    <div class="menu-pane">
+      
+      <nav>
+        <ul class="menu-links">
+          <li><a href="###">Brain</a><span id="QC-info">
+            <p>+1 418-640-3300</p>
+          </span>
+            
+          </li>
+          
+          <li><a href="###">Hey</a>
+           
+          </li>
+          <li><a href="###">Hi</a></li>
+          <li><a href="###">Welcome!</a></li>
+        </ul>
+         <ul class="menu-links">
+                     <li><a href="###">Mind</a>
+                       <span id="DC-info">
+            <p>+1 202-472-3850</p>
+          </span></li>
+
+          <li><a href="###">Hello</a></li>
+          <li><a href="###">
+            Ta           
+            </a></li>
+          <li><a href="###">Da</a></li>
+        </ul>
+        
+        
+      </nav>
+</div>
+
+</head>
+
+<body>
+  <h1><a href="index.html"><img src = "https://user-images.githubusercontent.com/104753440/167248637-adebb615-1226-4db2-bae0-9eb94e6bfa3f.png" width = "500" alt=""/></a></h1>
+</body>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>HTML</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-  <br><br><img src="https://cdn.pixabay.com/photo/2022/04/22/17/22/woman-7150236_1280.jpg" width="60%">
-  </p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-  </p>
+  <br><br>
+  <h2>
+    <div class="grid-image">
+      <a href="1.html">
+      <img alt="" src="https://user-images.githubusercontent.com/104753440/167288905-aa1db37b-1aca-4ea3-af4d-1cdc8249a7f3.png" width = "200"/></a>
+      <a href="2.html">
+      <img alt="" src="https://user-images.githubusercontent.com/104753440/167288903-1783397c-5d5c-45a6-b07e-2355dba0473c.png" width = "200"/></a>
+      <a href="3.html">
+      <img alt="" src="https://user-images.githubusercontent.com/104753440/167288888-a0557c8b-bde7-4fda-921b-4563a652e890.png" width = "200"/></a>
+    </div>
+  </h2>
+  <br><br>
   <p>
     <div id="disqus_thread"></div>
 <script>
